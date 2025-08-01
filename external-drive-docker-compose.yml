@@ -49,7 +49,7 @@ services:
     #   file: hwaccel.ml.yml
     #   service: cpu # set to one of [armnn, cuda, rocm, openvino, openvino-wsl, rknn] for accelerated inference - use the `-wsl` version for WSL2 where applicable
     volumes:
-      - /var/lib/docker/immich-app/model-cache:/cache
+      - /var/lib/docker/volumes/immich-app/model-cache:/cache
     env_file:
       - stack.env
     restart: always
